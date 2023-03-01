@@ -1,0 +1,118 @@
+*{
+    font-family: sans-serif;
+    background: #0b0027;
+    color: white;
+    border: none;
+
+}
+
+*:focus{
+    outline: none;
+}
+
+.titulo{
+    color:#6137ce;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #160149;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+}
+
+form{
+    margin: 30px auto;
+    margin-bottom: 60px;
+    display: flex;
+    width: 600px;
+    height: 60px;
+    position: relative;
+}
+
+.add{
+    position: absolute;
+    right:0;
+    top:0;
+    height: 62px;
+    background:#200466;
+    padding: 10px 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.add:hover{
+    cursor: pointer;
+    background-color: rgb(243, 240, 255);
+    color: #1A005C;
+}
+
+.listaDeTarefas{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap column;
+    width: 600px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.item span{
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid #7044E1;
+    border-radius: 5px;
+}
+
+.delet{
+    background: #2a0d72;
+    border: none;
+    padding: 15px;
+}
+
+.delet:hover{
+    cursor: pointer;
+    background-color: #ec5252;
+}
+
+.completo span{
+    background: #23056e;
+    border: none;
+    border-radius: 10px;
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.deleteAll{
+    border: 1px solid #f52525;
+    color: #f52525;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    width: 600px;
+}
+
+.deleteAll:hover{
+    background-color: #f52525;
+    color: #ffffff;
+}
+
+@media (max-width: 900px){
+    form, .deleteAll, .listaDeTarefas{
+        width: 95%;
+}
+}
