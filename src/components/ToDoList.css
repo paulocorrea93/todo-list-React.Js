@@ -103,12 +103,24 @@ form{
     padding: 15px;
     font-weight: bold;
     border-radius: 7px;
-    width: 600px;
+    width: 200px;
+    margin-top: 30px;
 }
 
 .deleteAll:hover{
     background-color: #f52525;
     color: #ffffff;
+}
+
+.imagem-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.imagem-principal img{
+    max-width: 60%;
 }
 
 @media (max-width: 900px){
